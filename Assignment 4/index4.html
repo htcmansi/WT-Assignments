@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate JS</title>
+    <link href="style4.css" rel="stylesheet">
+</head>
+
+<script>
+    const form = document.querySelector('#login-form');
+const errorMsg = document.querySelector('#error-msg');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const username = document.querySelector('#username').value.trim();
+  const password = document.querySelector('#password').value.trim();
+
+  if (username === '' || password === '') {
+    errorMsg.textContent = 'Please enter a username and password.';
+    alert("Plz enter the username");
+    return false;
+  } else if (username !== 'admin' || password !== 'password') {
+
+    errorMsg.textContent = 'Invalid username or password.';
+    alert("Plz enter the username");
+    return false;
+  } else {
+    window.location.href = 'dashboard.html'; // Redirect to dashboard page
+  }
+});
+
+</script>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <form id="login-form">
+                <h1>Login Form</h1>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter the name">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter the password">
+                <br>
+                <button type="submit" value="Login">Submit</button>
+                <!-- <input type="submit" > -->
+              </form>
+              <p id="error-msg"></p>
+    
+        </div>
+
+
+
+    </div>
+
+    
+    
+      
+    
+</body>
+</html>
