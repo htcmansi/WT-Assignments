@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="style3.css"?>
+<!DOCTYPE employees SYSTEM "employee3.dtd">
+<employees>
+  <heading>Employee Data </heading>
+  <employee department="ENG">
+    <name id="1">Name:Akash Chopra</name>
+    <position>Position:Software Developer</position>
+    <joinyear>Joining year:2010</joinyear>
+    <salary>Salary:35000</salary>
+  </employee>
+  <employee category="ENG">
+    <name id="1">Name:Jay Prakash</name>
+    <position>Position:Testers</position>
+    <joinyear>Joining year:2010</joinyear>
+    <salary>Salary:20000</salary>
+  </employee>
+  <employee category="ENG">
+    <name id="1">Name:Rekha Sharma</name>
+    <position>Position:System Engineer</position>
+    <joinyear>Joining year:2005</joinyear>
+    <salary>Salary:25000</salary>
+  </employee>
+  <employee category="HK">
+    <name id="1">Name:Rohit S</name>
+    <position>Position:House Keeping</position>
+    <joinyear>Joining year:2000</joinyear>
+    <salary>Salary:9000</salary>
+  </employee>
+</employees>
